@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { DOCS, SIGN_UP, salesMail } from "@/lib/links";
+import { DOCS, SIGN_UP, salesPage } from "@/lib/links";
 import { mono, t } from "@/site/theme";
 import { Button, Check, Heading, Icon, wrap } from "@/site/ui";
 
@@ -181,7 +181,7 @@ export function FinalCta() {
         <p style={{ margin: "16px auto 0", maxWidth: 560, fontSize: 18, color: t.text2 }}>The Free plan has sign-in, passkeys, two-step, attack protection, the activity log and consent. Talk to us when you need more.</p>
         <div style={{ marginTop: 28, display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
           <Button href={SIGN_UP} big>Start free</Button>
-          <Button href={salesMail()} kind="quiet" big>Talk to sales</Button>
+          <Button href={salesPage()} kind="quiet" big>Talk to sales</Button>
         </div>
       </div>
     </section>

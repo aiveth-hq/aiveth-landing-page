@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CONSOLE, DOCS, GOOCLAIM, PRIVACY_EMAIL, SALES_EMAIL, SECURITY_EMAIL, SIGN_UP, SUPPORT_EMAIL } from "@/lib/links";
+import { CONSOLE, CONTACT_EMAIL, DOCS, GOOCLAIM, SIGN_UP, salesPage } from "@/lib/links";
 import Logo from "./Logo";
 import { mono, t } from "./theme";
 
@@ -10,7 +10,7 @@ const COLS: { title: string; links: FooterLink[] }[] = [
   { title: "DEVELOPERS", links: [{ label: "Developers", href: "/developers" }, { label: "Documentation", href: DOCS }, { label: "Quickstart", href: `${DOCS}/quickstart` }, { label: "API reference", href: `${DOCS}/api-reference/introduction` }, { label: "SDKs", href: `${DOCS}/sdks/overview` }] },
   { title: "COMPANY", links: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }] },
   { title: "LEGAL", links: [{ label: "Privacy policy", href: "/privacy" }, { label: "Terms of service", href: "/terms" }, { label: "Data processing (DPA)", href: "/dpa" }, { label: "Sub-processors", href: "/subprocessors" }] },
-  { title: "CONTACT", links: [{ label: SALES_EMAIL, href: `mailto:${SALES_EMAIL}` }, { label: SUPPORT_EMAIL, href: `mailto:${SUPPORT_EMAIL}` }, { label: SECURITY_EMAIL, href: `mailto:${SECURITY_EMAIL}` }, { label: PRIVACY_EMAIL, href: `mailto:${PRIVACY_EMAIL}` }] },
+  { title: "CONTACT", links: [{ label: "Talk to sales", href: salesPage() }, { label: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` }] },
 ];
 
 function FooterAnchor({ link }: { link: FooterLink }) {

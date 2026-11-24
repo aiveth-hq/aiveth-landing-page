@@ -53,7 +53,7 @@ export default function Privacy() {
       </ul>
       <h3>When you use this website or contact us</h3>
       <ul>
-        <li>What you write to us, and your email address.</li>
+        <li>What you write to us, and your email address. On the Talk to sales form also your name, your organization and how many people work there; we keep it for up to a year, in India.</li>
         <li>Anonymous page statistics. This website uses Vercel Web Analytics, which does not use cookies. Your light or dark theme choice is kept in your browser only.</li>
       </ul>
 

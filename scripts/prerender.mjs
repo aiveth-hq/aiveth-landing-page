@@ -16,6 +16,7 @@ const ROUTES = [
   "/integrations",
   "/about",
   "/contact",
+  "/contact-sales",
   "/privacy",
   "/terms",
   "/dpa",

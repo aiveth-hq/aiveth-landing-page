@@ -1,6 +1,6 @@
 import type React from "react";
 import { Link } from "react-router-dom";
-import { SIGN_UP, salesMail } from "@/lib/links";
+import { SIGN_UP, salesPage } from "@/lib/links";
 import { mono, t } from "@/site/theme";
 import { Button } from "@/site/ui";
 
@@ -85,7 +85,7 @@ export default function Hero() {
           </p>
           <div className="av-hero-cta" style={{ marginTop: 32, display: "flex", gap: 12, flexWrap: "wrap" }}>
             <Button href={SIGN_UP} big>Start free</Button>
-            <Button href={salesMail()} kind="quiet" big>Talk to sales</Button>
+            <Button href={salesPage()} kind="quiet" big>Talk to sales</Button>
           </div>
           <div style={{ marginTop: 16, fontSize: 14, color: t.text3 }}>Free plan · No card needed</div>
         </div>

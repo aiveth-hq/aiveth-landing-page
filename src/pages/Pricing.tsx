@@ -1,5 +1,5 @@
 import SEOHead from "@/components/SEOHead";
-import { SIGN_UP, salesMail } from "@/lib/links";
+import { SIGN_UP, salesPage } from "@/lib/links";
 import { SEO_PRICING } from "@/lib/seo";
 import SiteLayout from "@/site/SiteLayout";
 import { mono, t } from "@/site/theme";
@@ -45,7 +45,7 @@ export default function Pricing() {
                   <div style={{ fontSize: 14, color: t.text3 }}>{p.under}</div>
                   <div style={{ marginTop: 16, fontFamily: mono, fontSize: 12, color: t.text2 }}>{p.users} active users · {p.apps} apps</div>
                   <div style={{ marginTop: 20 }}>
-                    <Button href={free ? SIGN_UP : salesMail(p.name)} kind={free ? "primary" : "quiet"}>{free ? "Start free" : "Talk to sales"}</Button>
+                    <Button href={free ? SIGN_UP : salesPage(p.name)} kind={free ? "primary" : "quiet"}>{free ? "Start free" : "Talk to sales"}</Button>
                   </div>
                   <div style={{ marginTop: 22, fontSize: 14, fontWeight: 600 }}>{p.lead}</div>
                   <ul style={{ listStyle: "none", padding: 0, margin: "10px 0 0", display: "grid", gap: 8, fontSize: 14, color: t.text2 }}>

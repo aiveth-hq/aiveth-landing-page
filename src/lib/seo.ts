@@ -38,6 +38,7 @@ export const SEO_404: PageSEO = { title: "Page not found · Aiveth by Gooclaim",
 export const SEO_INTEGRATIONS: PageSEO = { title: "Integrations · Aiveth by Gooclaim", description: "Okta, Microsoft Entra ID, Google Workspace, Datadog, Splunk, Node.js, Python, React and every OpenID Connect, SAML and SCIM tool." };
 export const SEO_DEVELOPERS: PageSEO = { title: "Developers · Aiveth by Gooclaim", description: "OpenID Connect, an admin API, webhooks and SDKs — and docs for every step." };
 export const SEO_ABOUT: PageSEO = { title: "About · Aiveth by Gooclaim", description: "Why Gooclaim built Aiveth, and what we will not compromise on." };
+export const SEO_CONTACT_SALES: PageSEO = { title: "Talk to sales · Aiveth by Gooclaim", description: "Tell us what your organization needs from Pro, Business or Enterprise, and we reply by email." };
 export const SEO_CONTACT: PageSEO = { title: "Contact · Aiveth by Gooclaim", description: "Talk to sales, report a security problem, or ask about privacy." };
 export const SEO_DPA: PageSEO = { title: "Data processing agreement · Aiveth by Gooclaim", description: "How Gooclaim processes personal data for organizations that use Aiveth." };
 export const SEO_SUBPROCESSORS: PageSEO = { title: "Sub-processors · Aiveth by Gooclaim", description: "The service providers that help Gooclaim run Aiveth." };

@@ -8,6 +8,7 @@ import Security from "./pages/Security";
 import Developers from "./pages/Developers";
 import Integrations from "./pages/Integrations";
 import { About, Contact } from "./pages/Company";
+import ContactSales from "./pages/ContactSales";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import { Dpa, Subprocessors } from "./pages/Dpa";
@@ -41,6 +42,7 @@ function AppRoutes() {
         <Route path="/integrations" element={<Integrations />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-sales" element={<ContactSales />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/dpa" element={<Dpa />} />

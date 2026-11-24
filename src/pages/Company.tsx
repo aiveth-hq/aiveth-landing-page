@@ -1,5 +1,6 @@
+import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
-import { GOOCLAIM, PRIVACY_EMAIL, SALES_EMAIL, SECURITY_EMAIL, SUPPORT_EMAIL, salesMail } from "@/lib/links";
+import { GOOCLAIM, PRIVACY_EMAIL, SALES_EMAIL, SECURITY_EMAIL, SUPPORT_EMAIL, salesPage } from "@/lib/links";
 import { SEO_ABOUT, SEO_CONTACT } from "@/lib/seo";
 import SiteLayout from "@/site/SiteLayout";
 import { mono, t } from "@/site/theme";
@@ -52,11 +53,35 @@ export function About() {
 }
 
 const CONTACTS: { title: string; text: string; email: string; href?: string; cta: string }[] = [
-  { title: "Sales", text: "Pro, Business or Enterprise, a partner deal, or a question before you start.", email: SALES_EMAIL, href: salesMail(), cta: "Talk to sales" },
+  { title: "Sales", text: "Pro, Business or Enterprise, a partner deal, or a question before you start.", email: SALES_EMAIL, href: salesPage(), cta: "Talk to sales" },
   { title: "Support", text: "Already using Aiveth? Tell us your organization and what you see.", email: SUPPORT_EMAIL, cta: "Email support" },
   { title: "Security", text: "Found a vulnerability? Tell us what you found and how to see it.", email: SECURITY_EMAIL, cta: "Report a problem" },
   { title: "Privacy", text: "Questions or grievances about personal data, and data processing terms.", email: PRIVACY_EMAIL, cta: "Write to privacy" },
 ];
+
+/** A mail link does nothing on a computer with no mail app set up, so the address is always shown,
+ *  with a Copy button, and the subject names the team. */
+function mailTo(email: string, team: string): string {
+  return `mailto:${email}?subject=${encodeURIComponent(`Aiveth — ${team}`)}`;
+}
+
+function CopyAddress({ email }: { email: string }) {
+  const [copied, setCopied] = useState(false);
+  const copy = () => {
+    navigator.clipboard?.writeText(email).then(() => {
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    }).catch(() => undefined);
+  };
+  return (
+    <div style={{ marginTop: 14, display: "flex", alignItems: "center", gap: 10, fontFamily: mono, fontSize: 13, color: t.text3 }}>
+      <span style={{ userSelect: "all" }}>{email}</span>
+      <button type="button" onClick={copy} aria-label={`Copy ${email}`} style={{ border: `1px solid ${t.border}`, background: t.bg, color: t.text2, borderRadius: 999, padding: "3px 10px", fontSize: 12, fontFamily: "inherit", cursor: "pointer" }}>
+        {copied ? "Copied" : "Copy"}
+      </button>
+    </div>
+  );
+}
 
 export function Contact() {
   return (
@@ -65,14 +90,14 @@ export function Contact() {
       <GridStyle />
       <section style={{ borderBottom: `1px solid ${t.border}` }}>
         <div style={{ ...wrap, paddingTop: "clamp(48px, 6vw, 88px)", paddingBottom: "clamp(48px, 6vw, 88px)" }}>
-          <Heading eyebrow="Contact" title="Talk to a person." lead="Write to the right team and we reply by email. How fast depends on your plan's support." />
+          <Heading eyebrow="Contact" title="Talk to a person." lead="Ask sales on a short form, or write to us by email. We reply by email; how fast depends on your plan's support." />
           <div className="av-grid3" style={{ marginTop: 36, gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
             {CONTACTS.map((c) => (
               <div key={c.title} className="av-card" style={{ borderRadius: 20, border: `1px solid ${t.border}`, background: t.surface, padding: 24, display: "flex", flexDirection: "column", boxShadow: t.softShadow }}>
                 <div style={{ fontWeight: 600, fontSize: 18 }}>{c.title}</div>
                 <p style={{ margin: "8px 0 0", fontSize: 15, color: t.text2, flex: 1 }}>{c.text}</p>
-                <div style={{ marginTop: 14, fontFamily: mono, fontSize: 13, color: t.text3 }}>{c.email}</div>
-                <div style={{ marginTop: 14 }}><Button href={c.href ?? `mailto:${c.email}`} kind={c.title === "Sales" ? "primary" : "quiet"}>{c.cta}</Button></div>
+                {!c.href && <CopyAddress email={c.email} />}
+                <div style={{ marginTop: 14 }}><Button href={c.href ?? mailTo(c.email, c.title)} kind={c.href ? "primary" : "quiet"}>{c.cta}</Button></div>
               </div>
             ))}
           </div>
