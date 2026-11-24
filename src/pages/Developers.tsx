@@ -54,7 +54,7 @@ export default function Developers() {
               </div>
             </div>
             <div style={{ borderRadius: 20, background: t.code, color: t.codeText, padding: "22px 24px", fontFamily: mono, fontSize: 13.5, lineHeight: 1.9, boxShadow: t.cardShadow, overflowX: "auto" }}>
-              <div style={{ color: t.codeDim, marginBottom: 8 }}># https://auth.aiveth.com</div>
+              <div style={{ color: t.codeDim, marginBottom: 8 }}># https://accounts.aiveth.com</div>
               {ENDPOINTS.map(([m, p]) => (
                 <div key={p} style={{ whiteSpace: "nowrap" }}>
                   <span style={{ color: t.codeKey, display: "inline-block", width: 52 }}>{m}</span>{p}

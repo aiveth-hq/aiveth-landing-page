@@ -62,7 +62,7 @@ export function Features() {
 }
 
 const CODE: [string, string][] = [
-  ["issuer", "https://auth.aiveth.com"],
+  ["issuer", "https://accounts.aiveth.com"],
   ["discovery", "/.well-known/openid-configuration"],
   ["client_id", "your app's client ID"],
   ["redirect_uri", "https://yourapp.com/callback"],

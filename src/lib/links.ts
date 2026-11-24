@@ -2,7 +2,7 @@
  * Every address the site sends people to, in ONE place. The production sign-in address is not
  * final yet: change APP here and every button follows.
  */
-export const APP = "https://auth.aiveth.com";
+export const APP = "https://accounts.aiveth.com";
 export const CONSOLE = `${APP}/console`;
 export const SIGN_UP = `${APP}/signup`;
 export const DOCS = "https://docs.aiveth.com";
