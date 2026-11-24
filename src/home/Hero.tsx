@@ -16,7 +16,8 @@ function Field({ label, value }: { label: string; value: string }) {
   );
 }
 
-/** A sign-in method, with its owner's official logo (see ASSETS.md) beside its name. */
+/** A sign-in button with its owner's official logo (see ASSETS.md) and the words the owner's
+ *  rules ask for ("Continue with …"). */
 function Provider({ name, children }: { name: string; children: React.ReactNode }) {
   return (
     <div style={{ height: 42, borderRadius: 10, border: `1px solid ${t.border}`, background: t.surface, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontSize: 13.5, fontWeight: 500 }}>
@@ -47,10 +48,10 @@ function SignInCard() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"><circle cx="8" cy="9" r="4" /><path d="M2 21a6 6 0 0 1 12 0M15 12l5-5M18 9l2 2" /></svg>
             Sign in with a passkey
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: 8 }}>
-            <Provider name="Google"><img src="/logos/google.png" alt="" width={16} height={16} /></Provider>
-            <Provider name="Microsoft"><img src="/logos/microsoft.svg" alt="" width={15} height={15} /></Provider>
-            <Provider name="GitHub">
+          <div style={{ display: "grid", gap: 8 }}>
+            <Provider name="Continue with Google"><img src="/logos/google.png" alt="" width={16} height={16} /></Provider>
+            <Provider name="Continue with Microsoft"><img src="/logos/microsoft.svg" alt="" width={15} height={15} /></Provider>
+            <Provider name="Continue with GitHub">
               <img className="only-light" src="/logos/github-black.svg" alt="" width={16} height={16} />
               <img className="only-dark" src="/logos/github-white.svg" alt="" width={16} height={16} />
             </Provider>

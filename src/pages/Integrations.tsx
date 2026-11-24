@@ -9,13 +9,13 @@ import { Button, Heading, wrap } from "@/site/ui";
  * What Aiveth works with, as the docs state it. A logo only where its owner's rules allow it on a
  * page like this (ASSETS.md); every other name is plain text, never a drawn mark.
  */
-interface Item { name: string; logo?: string; wide?: boolean; h?: number }
+interface Item { name: string; logo?: string; wide?: boolean; h?: number; label?: string }
 
 const GROUPS: { title: string; lead: string; doc: string; items: Item[] }[] = [
   { title: "Single sign-on and user sync", lead: "Your customers bring their own identity provider over OpenID Connect or SAML 2.0, and keep people in step with SCIM 2.0.", doc: "/sign-in/single-sign-on",
     items: [{ name: "Okta", logo: "/logos/okta-wordmark.png", wide: true, h: 44 }, { name: "Microsoft Entra ID" }, { name: "Google Workspace" }, { name: "JumpCloud" }, { name: "OneLogin" }, { name: "Any OpenID Connect or SAML 2.0 provider" }] },
   { title: "Ways people sign in", lead: "Turn each one on from the console.", doc: "/sign-in/methods",
-    items: [{ name: "GitHub", logo: "/logos/github-black.svg" }, { name: "Google" }, { name: "Microsoft" }, { name: "Passkeys" }, { name: "Email codes" }, { name: "Phone codes by WhatsApp or SMS (India)" }, { name: "Truecaller (India)" }] },
+    items: [{ name: "GitHub", logo: "/logos/github-black.svg" }, { name: "Google", logo: "/logos/google.png", label: "Sign in with Google" }, { name: "Microsoft", logo: "/logos/microsoft.svg", label: "Sign in with Microsoft" }, { name: "Passkeys" }, { name: "Email codes" }, { name: "Phone codes by WhatsApp or SMS (India)" }, { name: "Truecaller", logo: "/logos/truecaller.png", label: "Continue with Truecaller (India)" }] },
   { title: "Your security tools", lead: "Stream the activity log to where your team already looks.", doc: "/events/log-streams",
     items: [{ name: "Datadog", logo: "/logos/datadog-wordmark.png", wide: true }, { name: "Splunk" }, { name: "Microsoft Sentinel" }, { name: "Amazon S3" }, { name: "Any HTTPS address" }] },
   { title: "Build with", lead: "SDKs for your stack, on open standards.", doc: "/sdks/overview",
@@ -30,7 +30,7 @@ function Tile({ item }: { item: Item }) {
       {item.logo && (
         <img src={item.logo} alt={item.wide ? item.name : ""} height={item.h ?? (item.wide ? 22 : 24)} style={{ height: item.h ?? (item.wide ? 22 : 24), width: "auto", maxWidth: 130 }} />
       )}
-      {(!item.logo || !item.wide) && <span>{item.name}</span>}
+      {(!item.logo || !item.wide) && <span>{item.label ?? item.name}</span>}
     </div>
   );
 }

@@ -21,6 +21,10 @@ show a project uses Python), React (as provided), OpenID wordmark (no published 
 "OpenID Certified" mark is NOT used), Firebase (unchanged, not misleading). Each shown unchanged on a
 white tile.
 
-Names only, never a logo: Google / Google Workspace and Microsoft / Microsoft Entra ID (their logos are
-for sign-in buttons only), Splunk and Workday (written permission needed), Amazon S3, Microsoft Sentinel,
+Google, Microsoft and Truecaller appear ONLY as sign-in buttons, with the words their rules ask for
+("Sign in with Google", "Sign in with Microsoft", "Continue with Truecaller"; the home page's card says
+"Continue with …"). `truecaller.png` is the console's copy of truecaller.com's own icon.
+
+Names only, never a logo: Google Workspace and Microsoft Entra ID (their logos are for sign-in buttons
+only), Splunk and Workday (written permission needed), Amazon S3, Microsoft Sentinel,
 JumpCloud, OneLogin, Truecaller.
