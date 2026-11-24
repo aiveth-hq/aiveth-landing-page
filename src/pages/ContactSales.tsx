@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties, type FormEvent } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type FormEvent, type ReactNode } from "react";
 import { useSearchParams } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import { CONTACT_EMAIL, SALES_API, TURNSTILE_SITE_KEY } from "@/lib/links";
@@ -49,6 +49,22 @@ const input: CSSProperties = {
   width: "100%", minHeight: 44, padding: "10px 14px", borderRadius: 12, border: `1px solid ${t.border}`,
   background: t.bg, color: t.text, fontSize: 16, fontFamily: "inherit", fontWeight: 400, boxSizing: "border-box",
 };
+
+/** A native select without the browser's own arrow (it sat on the edge): our chevron, room for it. */
+function Select({ value, onChange, required, children }: { value: string; onChange: (e: { target: { value: string } }) => void; required?: boolean; children: ReactNode }) {
+  return (
+    <span style={{ position: "relative", display: "block" }}>
+      <select style={{ ...input, appearance: "none", WebkitAppearance: "none", MozAppearance: "none", paddingRight: 44, cursor: "pointer", color: value ? t.text : t.text3 }}
+        required={required} value={value} onChange={onChange}>
+        {children}
+      </select>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={t.text2} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"
+        style={{ position: "absolute", right: 16, top: "50%", transform: "translateY(-50%)", pointerEvents: "none" }}>
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </span>
+  );
+}
 
 export default function ContactSales() {
   const [params] = useSearchParams();
@@ -102,17 +118,17 @@ export default function ContactSales() {
                 <label style={field}>Your name<input style={input} required maxLength={120} autoComplete="name" value={form.name} onChange={set("name")} /></label>
                 <label style={field}>Work email<input style={input} required type="email" maxLength={254} autoComplete="email" value={form.email} onChange={set("email")} /></label>
                 <label style={field}>Organization<input style={input} required maxLength={160} autoComplete="organization" value={form.organization} onChange={set("organization")} /></label>
-                <div style={{ display: "grid", gap: 16, gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))" }}>
+                <div style={{ display: "grid", gap: 20, gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
                   <label style={field}>People in your organization
-                    <select style={input} required value={form.size} onChange={set("size")}>
+                    <Select required value={form.size} onChange={set("size")}>
                       <option value="" disabled>Choose…</option>
                       {SIZES.map(([k, label]) => <option key={k} value={k}>{label}</option>)}
-                    </select>
+                    </Select>
                   </label>
                   <label style={field}>Plan
-                    <select style={input} value={form.plan} onChange={set("plan")}>
-                      {PLANS.map(([k, label]) => <option key={k} value={k}>{label}</option>)}
-                    </select>
+                    <Select value={form.plan || "none"} onChange={(e) => setForm((f) => ({ ...f, plan: e.target.value === "none" ? "" : e.target.value }))}>
+                      {PLANS.map(([k, label]) => <option key={k || "none"} value={k || "none"}>{label}</option>)}
+                    </Select>
                   </label>
                 </div>
                 <label style={field}><span>What do you need? <span style={{ fontWeight: 400, color: t.text3 }}>(optional)</span></span>
