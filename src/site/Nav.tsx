@@ -8,6 +8,7 @@ import { t } from "./theme";
 const LINKS = [
   { label: "Product", to: "/#product" },
   { label: "Developers", to: "/developers" },
+  { label: "Integrations", to: "/integrations" },
   { label: "Security", to: "/security" },
   { label: "Pricing", to: "/pricing" },
   { label: "Docs", to: DOCS },

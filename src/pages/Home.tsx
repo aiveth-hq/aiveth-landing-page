@@ -3,7 +3,7 @@ import { SEO_HOME } from "@/lib/seo";
 import { orgJsonLd, softwareJsonLd } from "@/lib/structured";
 import SiteLayout from "@/site/SiteLayout";
 import Hero from "@/home/Hero";
-import { Compliance, Developers, Enterprise, Features, FinalCta, GridStyle } from "@/home/Sections";
+import { Compliance, Developers, Enterprise, Features, FinalCta, GridStyle, UseCases } from "@/home/Sections";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <SEOHead seo={SEO_HOME} path="/" jsonLd={[orgJsonLd, softwareJsonLd]} />
       <GridStyle />
       <Hero />
+      <UseCases />
       <Features />
       <Developers />
       <Compliance />

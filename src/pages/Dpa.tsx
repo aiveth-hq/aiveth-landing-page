@@ -64,8 +64,10 @@ export function Dpa() {
 
       <h2>7. Where data is processed</h2>
       <p>
-        Data is processed in the places listed for each sub-processor. Any transfer outside India follows
-        section 16 of the Act and never goes to a country the Government of India restricts.
+        Production data is stored and processed in India. A few providers handle a small part of it
+        outside India, as listed on the sub-processors page (the bot check, and console screen
+        statistics when switched on). Any transfer outside India follows section 16 of the Act and never
+        goes to a country the Government of India restricts.
       </p>
 
       <h2>8. When your account ends</h2>
@@ -92,7 +94,7 @@ export function Dpa() {
 
 /** The providers Aiveth's own code calls, and when. Keep it equal to what production runs. */
 const PROCESSORS: [string, string, string, string][] = [
-  ["Microsoft Azure", "Hosting: servers and databases", "All data in Aiveth", "India"],
+  ["Microsoft Azure", "Hosting: servers and databases (production)", "All data in Aiveth", "India"],
   ["Amazon Web Services (Amazon SES)", "Sending email: codes, invitations and notices", "Email address, the message", "Mumbai, India"],
   ["MSG91", "Sending codes to Indian phones by WhatsApp or SMS", "Phone number, the code", "India"],
   ["Cloudflare (Turnstile)", "Bot check on sign-in pages", "IP address, browser signals", "Global network"],
@@ -107,8 +109,9 @@ export function Subprocessors() {
       <SEOHead seo={SEO_SUBPROCESSORS} path="/subprocessors" />
       <p>
         These service providers help Gooclaim run Aiveth and may process personal data for the
-        organizations that use it, under the <Link to="/dpa">data processing agreement</Link>. We email
-        Owners at least 30 days before adding or replacing one.
+        organizations that use it, under the <Link to="/dpa">data processing agreement</Link>. Production
+        data is stored and processed in India. We email Owners at least 30 days before adding or
+        replacing one.
       </p>
       <div style={{ overflowX: "auto", margin: "24px 0" }}>
         <table style={{ width: "100%", minWidth: 640, borderCollapse: "collapse", fontSize: 15 }}>

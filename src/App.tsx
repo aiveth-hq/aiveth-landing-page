@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import Security from "./pages/Security";
 import Developers from "./pages/Developers";
+import Integrations from "./pages/Integrations";
 import { About, Contact } from "./pages/Company";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -37,6 +38,7 @@ function AppRoutes() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/security" element={<Security />} />
         <Route path="/developers" element={<Developers />} />
+        <Route path="/integrations" element={<Integrations />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />

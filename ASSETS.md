@@ -11,3 +11,16 @@ home page's drawing of the sign-in card; no endorsement is implied.
 | `public/logos/github-black.svg`, `github-white.svg` | GitHub Invertocat | https://brand.github.com/foundations/logo | Black on light, white on dark; never recoloured |
 
 All logos are trademarks of their owners.
+
+## Integrations page (`src/pages/Integrations.tsx`)
+
+Logos only where the owner's rules allow naming an integration on a page like this (per the console's
+`ASSETS.md`): Okta (Terms of Use for Okta Content), GitHub (permitted logo, black, unchanged), Datadog
+(guidelines followed: unchanged, on white), Node.js (OpenJS trademark policy), Python (PSF: encouraged to
+show a project uses Python), React (as provided), OpenID wordmark (no published policy; the separate
+"OpenID Certified" mark is NOT used), Firebase (unchanged, not misleading). Each shown unchanged on a
+white tile.
+
+Names only, never a logo: Google / Google Workspace and Microsoft / Microsoft Entra ID (their logos are
+for sign-in buttons only), Splunk and Workday (written permission needed), Amazon S3, Microsoft Sentinel,
+JumpCloud, OneLogin, Truecaller.

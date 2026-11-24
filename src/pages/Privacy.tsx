@@ -72,6 +72,12 @@ export default function Privacy() {
         <li>Regulators, courts and authorities, where the law requires it.</li>
       </ul>
 
+      <h3>Where it is kept</h3>
+      <p>
+        Production data is stored and processed in India. A few providers handle a small part of it
+        outside India — they are named on the <Link to="/subprocessors">sub-processors page</Link>.
+      </p>
+
       <h2>6. How long we keep it</h2>
       <ul>
         <li>The activity log is kept for one year (DPDP Rules, Rule 6), then removed.</li>

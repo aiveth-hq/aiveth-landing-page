@@ -8,7 +8,7 @@ import { GridStyle } from "@/home/Sections";
 
 /** Every line here is one the product's own security page states (checked against the code). */
 const BLOCKS: { title: string; points: string[] }[] = [
-  { title: "Your data stays separate", points: ["Aiveth runs as its own service, with its own database, cache, signing keys and address.", "Every organization's data is kept apart; a request that names another organization's record is answered as if it doesn't exist."] },
+  { title: "Your data stays in India", points: ["Production data is stored and processed in India.", "Aiveth runs as its own service, with its own database, cache, signing keys and address.", "Every organization's data is kept apart; a request that names another organization's record is answered as if it doesn't exist."] },
   { title: "Passwords", points: ["Checked against a list of known breached passwords, following NIST SP 800-63B.", "Stored with Argon2id, never in a form Aiveth can read back.", "Every sign-in takes the same time whether or not the account exists."] },
   { title: "Secrets and keys", points: ["Sensitive values — single sign-on secrets, webhook secrets, phone numbers, log-stream credentials — are encrypted before they are stored.", "API keys are shown once; Aiveth keeps only a SHA-256 fingerprint, and a key can be limited to the addresses it comes from."] },
   { title: "Sessions and cookies", points: ["Session length and idle sign-out are your choice.", "Cookies use the __Host- prefix, and every change made with a cookie must come from Aiveth's own origin.", "Passkeys are bound to Aiveth's own host name."] },

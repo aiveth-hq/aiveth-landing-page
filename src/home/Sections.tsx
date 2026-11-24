@@ -70,6 +70,29 @@ const CODE: [string, string][] = [
   ["code_challenge_method", "S256  (PKCE)"],
 ];
 
+const USES: [string, string, string][] = [
+  ["For teams building a product", "Sign-in for your customers' users, with single sign-on and user sync for the enterprises that ask for it.", "B2B and consumer apps"],
+  ["For your own people", "One sign-in for your staff's apps, roles from your directory, and the activity log your auditors want.", "Workforce sign-in"],
+  ["For AI agents", "Let agents act for a person with short-lived tokens, limits you set, and a person's yes before anything that matters.", "Agents and MCP servers"],
+];
+
+export function UseCases() {
+  return (
+    <Section alt>
+      <Heading center eyebrow="Who it's for" title="One sign-in, three kinds of user." />
+      <div className="av-grid3" style={{ marginTop: 40 }}>
+        {USES.map(([title, text, tag]) => (
+          <div key={title} className="av-card" style={{ borderRadius: 20, border: `1px solid ${t.border}`, background: t.bg, padding: 24 }}>
+            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: ".1em", color: t.brand, textTransform: "uppercase" }}>{tag}</div>
+            <h3 style={{ margin: "10px 0 0", fontSize: 19, fontWeight: 600, letterSpacing: "-0.015em" }}>{title}</h3>
+            <p style={{ margin: "8px 0 0", fontSize: 15, color: t.text2 }}>{text}</p>
+          </div>
+        ))}
+      </div>
+    </Section>
+  );
+}
+
 export function Developers() {
   return (
     <Section id="developers" alt>
@@ -112,7 +135,7 @@ export function Compliance() {
   ];
   return (
     <Section id="compliance">
-      <Heading eyebrow="Privacy and compliance" title="Built for India's DPDP Act from the first line." lead="The Digital Personal Data Protection Act 2023 and its Rules ask a lot of every sign-in. Aiveth does that work, so your apps don't have to." />
+      <Heading eyebrow="Privacy and compliance" title="Built for India's DPDP Act from the first line." lead="The Digital Personal Data Protection Act 2023 and its Rules ask a lot of every sign-in. Aiveth does that work, so your apps don't have to — and production data stays in India." />
       <div className="av-grid3" style={{ marginTop: 40 }}>
         {items.map(([title, text]) => (
           <div key={title} style={{ borderTop: `2px solid ${t.brand}`, paddingTop: 16 }}>
