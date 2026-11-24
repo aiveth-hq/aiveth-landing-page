@@ -22,7 +22,7 @@ function Section({ id, children, alt }: { id?: string; children: ReactNode; alt?
 
 function Card({ icon, title, children, tone }: { icon: string[]; title: string; children: ReactNode; tone: [string, string] }) {
   return (
-    <div style={{ borderRadius: 20, border: `1px solid ${t.border}`, background: t.surface, padding: 24, boxShadow: t.softShadow }}>
+    <div className="av-card" style={{ borderRadius: 20, border: `1px solid ${t.border}`, background: t.surface, padding: 24, boxShadow: t.softShadow }}>
       <div style={{ width: 44, height: 44, borderRadius: 12, background: tone[1], color: tone[0], display: "flex", alignItems: "center", justifyContent: "center" }}>
         <Icon d={icon} />
       </div>

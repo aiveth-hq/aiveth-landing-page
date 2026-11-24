@@ -41,4 +41,9 @@ export const siteCss =
   `.av a{color:inherit;text-decoration:none}` +
   `.av a:hover{opacity:.8}` +
   `.av button{font:inherit;cursor:pointer}` +
-  `@media (max-width:860px){.av .av-hide-sm{display:none!important}}`;
+  `@media (max-width:860px){.av .av-hide-sm{display:none!important}}` +
+  // Cards lift a little under the pointer; nothing moves for anyone who asked for less motion.
+  `.av .av-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s,border-color .25s}` +
+  `@media (hover:hover) and (prefers-reduced-motion:no-preference){.av .av-card:hover{transform:translateY(-3px);border-color:${theme.t.brandLine}}}` +
+  `.av a[data-btn]{transition:transform .2s cubic-bezier(.16,1,.3,1),opacity .2s}` +
+  `@media (hover:hover) and (prefers-reduced-motion:no-preference){.av a[data-btn]:hover{opacity:1;transform:translateY(-1px)}}`;

@@ -12,8 +12,13 @@ const ROUTES = [
   "/",
   "/pricing",
   "/security",
+  "/developers",
+  "/about",
+  "/contact",
   "/privacy",
   "/terms",
+  "/dpa",
+  "/subprocessors",
   // Any unknown address renders the 404 page; written to dist/404.html, which
   // Vercel serves (with a 404 status) for every path it has no file for.
   NOT_FOUND,

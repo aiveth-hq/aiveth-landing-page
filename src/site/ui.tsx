@@ -29,9 +29,9 @@ export function Button({ href, children, kind = "primary", big }: { href: string
       ? { background: t.btnBg, color: t.btnText }
       : { background: t.glass, color: t.text, border: `1px solid ${t.border}`, backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }),
   };
-  if (href.startsWith("/")) return <Link to={href} style={style}>{children}</Link>;
+  if (href.startsWith("/")) return <Link to={href} style={style} data-btn="">{children}</Link>;
   const external = href.startsWith("http");
-  return <a href={href} style={style} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>{children}</a>;
+  return <a href={href} style={style} data-btn="" {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>{children}</a>;
 }
 
 export function Check({ color }: { color?: string }) {

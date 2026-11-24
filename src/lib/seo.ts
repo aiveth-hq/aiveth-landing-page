@@ -35,3 +35,8 @@ export const SEO_TERMS: PageSEO = {
   description: "The terms for using Aiveth.",
 };
 export const SEO_404: PageSEO = { title: "Page not found · Aiveth by Gooclaim", description: "This page does not exist." };
+export const SEO_DEVELOPERS: PageSEO = { title: "Developers · Aiveth by Gooclaim", description: "OpenID Connect, an admin API, webhooks and SDKs — and docs for every step." };
+export const SEO_ABOUT: PageSEO = { title: "About · Aiveth by Gooclaim", description: "Why Gooclaim built Aiveth, and what we will not compromise on." };
+export const SEO_CONTACT: PageSEO = { title: "Contact · Aiveth by Gooclaim", description: "Talk to sales, report a security problem, or ask about privacy." };
+export const SEO_DPA: PageSEO = { title: "Data processing agreement · Aiveth by Gooclaim", description: "How Gooclaim processes personal data for organizations that use Aiveth." };
+export const SEO_SUBPROCESSORS: PageSEO = { title: "Sub-processors · Aiveth by Gooclaim", description: "The service providers that help Gooclaim run Aiveth." };

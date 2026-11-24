@@ -1,3 +1,5 @@
+import type React from "react";
+import { Link } from "react-router-dom";
 import { SIGN_UP, salesMail } from "@/lib/links";
 import { mono, t } from "@/site/theme";
 import { Button } from "@/site/ui";
@@ -14,10 +16,11 @@ function Field({ label, value }: { label: string; value: string }) {
   );
 }
 
-function Provider({ name, mark }: { name: string; mark: string }) {
+/** A sign-in method, with its owner's official logo (see ASSETS.md) beside its name. */
+function Provider({ name, children }: { name: string; children: React.ReactNode }) {
   return (
     <div style={{ height: 42, borderRadius: 10, border: `1px solid ${t.border}`, background: t.surface, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontSize: 13.5, fontWeight: 500 }}>
-      <span aria-hidden="true" style={{ width: 18, height: 18, borderRadius: 5, background: t.surface2, fontSize: 11, fontWeight: 600, display: "flex", alignItems: "center", justifyContent: "center", color: t.text2 }}>{mark}</span>
+      {children}
       {name}
     </div>
   );
@@ -45,9 +48,12 @@ function SignInCard() {
             Sign in with a passkey
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, minmax(0,1fr))", gap: 8 }}>
-            <Provider name="Google" mark="G" />
-            <Provider name="Microsoft" mark="M" />
-            <Provider name="GitHub" mark="GH" />
+            <Provider name="Google"><img src="/logos/google.png" alt="" width={16} height={16} /></Provider>
+            <Provider name="Microsoft"><img src="/logos/microsoft.svg" alt="" width={15} height={15} /></Provider>
+            <Provider name="GitHub">
+              <img className="only-light" src="/logos/github-black.svg" alt="" width={16} height={16} />
+              <img className="only-dark" src="/logos/github-white.svg" alt="" width={16} height={16} />
+            </Provider>
           </div>
         </div>
         <div style={{ marginTop: 18, textAlign: "center", fontFamily: mono, fontSize: 10.5, letterSpacing: ".1em", color: t.text3 }}>SECURED BY AIVETH</div>
@@ -63,10 +69,11 @@ export default function Hero() {
       <div aria-hidden="true" style={{ position: "absolute", inset: 0, backgroundImage: `radial-gradient(${t.dot} 1px, transparent 1px)`, backgroundSize: "32px 32px", WebkitMaskImage: "radial-gradient(ellipse 70% 60% at 50% 40%, #000 10%, transparent 100%)", maskImage: "radial-gradient(ellipse 70% 60% at 50% 40%, #000 10%, transparent 100%)" }} />
       <div className="av-hero" style={{ position: "relative", maxWidth: 1240, margin: "0 auto", padding: "clamp(56px, 7vw, 104px) clamp(16px, 4vw, 40px)" }}>
         <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, minHeight: 36, padding: "4px 14px", borderRadius: 999, border: `1px solid ${t.border}`, background: t.glass, fontSize: 14, color: t.text2 }}>
+          <Link to="/security" style={{ display: "inline-flex", alignItems: "center", gap: 10, minHeight: 36, padding: "4px 6px 4px 14px", borderRadius: 999, border: `1px solid ${t.border}`, background: t.glass, fontSize: 14, color: t.text2 }}>
             <span style={{ width: 7, height: 7, borderRadius: 999, background: t.brand }} />
-            Aiveth by Gooclaim
-          </div>
+            India's DPDP Act, built in
+            <span style={{ padding: "3px 10px", borderRadius: 999, background: t.btnBg, color: t.btnText, fontSize: 12.5, fontWeight: 500 }}>See how →</span>
+          </Link>
           <h1 style={{ margin: "24px 0 0", fontSize: "clamp(38px, 4.6vw, 64px)", lineHeight: 1.04, fontWeight: 500, letterSpacing: "-0.045em" }}>
             Sign-in and access
             <br />

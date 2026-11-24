@@ -7,7 +7,7 @@ import { t } from "./theme";
 
 const LINKS = [
   { label: "Product", to: "/#product" },
-  { label: "Developers", to: "/#developers" },
+  { label: "Developers", to: "/developers" },
   { label: "Security", to: "/security" },
   { label: "Pricing", to: "/pricing" },
   { label: "Docs", to: DOCS },

@@ -9,6 +9,7 @@ export const DOCS = "https://docs.aiveth.com";
 export const SALES_EMAIL = "sales@aiveth.com";
 export const SECURITY_EMAIL = "security@aiveth.com";
 export const PRIVACY_EMAIL = "privacy@aiveth.com";
+export const SUPPORT_EMAIL = "support@aiveth.com";
 export const GOOCLAIM = "https://www.gooclaim.com";
 
 /** "Talk to sales" opens the visitor's own mail app, the plan in the subject. */

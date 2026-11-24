@@ -7,8 +7,9 @@ interface FooterLink { label: string; href: string }
 
 const COLS: { title: string; links: FooterLink[] }[] = [
   { title: "PRODUCT", links: [{ label: "Features", href: "/#product" }, { label: "Pricing", href: "/pricing" }, { label: "Security", href: "/security" }, { label: "Start free", href: SIGN_UP }, { label: "Sign in", href: CONSOLE }] },
-  { title: "DEVELOPERS", links: [{ label: "Documentation", href: DOCS }, { label: "Quickstart", href: `${DOCS}/quickstart` }, { label: "API reference", href: `${DOCS}/api-reference/introduction` }, { label: "SDKs", href: `${DOCS}/sdks/overview` }] },
-  { title: "LEGAL", links: [{ label: "Privacy policy", href: "/privacy" }, { label: "Terms of service", href: "/terms" }] },
+  { title: "DEVELOPERS", links: [{ label: "Developers", href: "/developers" }, { label: "Documentation", href: DOCS }, { label: "Quickstart", href: `${DOCS}/quickstart` }, { label: "API reference", href: `${DOCS}/api-reference/introduction` }, { label: "SDKs", href: `${DOCS}/sdks/overview` }] },
+  { title: "COMPANY", links: [{ label: "About", href: "/about" }, { label: "Contact", href: "/contact" }] },
+  { title: "LEGAL", links: [{ label: "Privacy policy", href: "/privacy" }, { label: "Terms of service", href: "/terms" }, { label: "Data processing (DPA)", href: "/dpa" }, { label: "Sub-processors", href: "/subprocessors" }] },
   { title: "CONTACT", links: [{ label: SALES_EMAIL, href: `mailto:${SALES_EMAIL}` }, { label: SECURITY_EMAIL, href: `mailto:${SECURITY_EMAIL}` }, { label: PRIVACY_EMAIL, href: `mailto:${PRIVACY_EMAIL}` }] },
 ];
 
