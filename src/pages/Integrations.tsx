@@ -19,7 +19,7 @@ const GROUPS: { title: string; lead: string; doc: string; items: Item[] }[] = [
   { title: "Your security tools", lead: "Stream the activity log to where your team already looks.", doc: "/events/log-streams",
     items: [{ name: "Datadog", logo: "/logos/datadog-wordmark.png", wide: true }, { name: "Splunk" }, { name: "Microsoft Sentinel" }, { name: "Amazon S3" }, { name: "Any HTTPS address" }] },
   { title: "Build with", lead: "SDKs for your stack, on open standards.", doc: "/sdks/overview",
-    items: [{ name: "Node.js", logo: "/logos/nodejs.svg" }, { name: "Python", logo: "/logos/python.svg" }, { name: "React", logo: "/logos/react.svg" }, { name: "OpenID Connect", logo: "/logos/openid-wordmark.png", wide: true }] },
+    items: [{ name: "Node.js", logo: "/logos/nodejs.svg" }, { name: "Python", logo: "/logos/python.svg" }, { name: "React", logo: "/logos/react.svg" }, { name: "Next.js" }, { name: "OpenID Connect", logo: "/logos/openid-wordmark.png", wide: true }] },
   { title: "Moving from another provider", lead: "Bring your people with their passwords: bcrypt and Argon2id work at once; other hashes are checked once by your old system.", doc: "/access/import-users",
     items: [{ name: "Firebase", logo: "/logos/firebase.png" }, { name: "Any system with bcrypt or Argon2id hashes" }] },
 ];

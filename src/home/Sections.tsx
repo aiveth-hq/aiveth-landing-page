@@ -54,7 +54,7 @@ export function Features() {
         <Card icon={I.shield} title="Two-step and attack protection" tone={green}>Authenticator apps and passkeys as a second step, recovery codes, bot checks, and alerts for a new device or impossible travel.</Card>
         <Card icon={I.building} title="Single sign-on and user sync" tone={violet}>Connect your customers' identity providers with OIDC or SAML, keep people in step with SCIM, and require single sign-on for a verified domain.</Card>
         <Card icon={I.users} title="Roles and permissions" tone={amber}>Built-in and your own roles, app permissions and groups, fine-grained roles on parts of your organization, access requests and reviews.</Card>
-        <Card icon={I.bot} title="Sign-in for AI agents" tone={blue}>Agents get short-lived tokens that say who they act for. Set hours, rate limits and permissions, and ask a person before an agent acts.</Card>
+        <Card icon={I.bot} title="Sign-in for AI agents" tone={blue}>Agents get short-lived tokens that say who they act for. Set hours, rate limits and permissions, and ask a person before an agent acts. Your coding agent can set Aiveth up through its MCP server.</Card>
         <Card icon={I.bolt} title="Events for your tools" tone={green}>Signed webhooks, log streams to your security tools, and Shared Signals so your apps hear about risky sessions at once.</Card>
       </div>
     </Section>
@@ -98,9 +98,9 @@ export function Developers() {
     <Section id="developers" alt>
       <div className="av-split">
         <div>
-          <Heading eyebrow="Developers" title="Add “Login with Aiveth” in an afternoon." lead="Aiveth is a standard OpenID Connect provider, so the OIDC library you already use works. SDKs for Node, Python and React, an admin API with scoped keys, and docs for every step." />
+          <Heading eyebrow="Developers" title="Add “Login with Aiveth” in an afternoon." lead="Aiveth is a standard OpenID Connect provider, so the OIDC library you already use works. SDKs for Node, Python, React and Next.js, an admin API with scoped keys, and docs for every step." />
           <ul style={{ listStyle: "none", padding: 0, margin: "24px 0 0", display: "grid", gap: 10, fontSize: 15.5, color: t.text2 }}>
-            {["Authorization code with PKCE, refresh tokens and logout", "Step-up sign-in and DPoP-bound tokens when an action needs more", "Device login for TVs and command-line tools, machine apps for servers", "Test and live keys, kept apart by environment"].map((x) => (
+            {["Authorization code with PKCE, refresh tokens and logout", "Step-up sign-in and DPoP-bound tokens when an action needs more", "Device login for TVs and command-line tools, machine apps for servers", "Signed access tokens your own API checks itself, with the person's organization and role", "Test and live keys, kept apart by environment"].map((x) => (
               <li key={x} style={{ display: "flex", gap: 10 }}><Check />{x}</li>
             ))}
           </ul>
@@ -151,7 +151,7 @@ export function Compliance() {
 
 export function Enterprise() {
   const rows = [
-    ["Your brand", "Your logo, colours and words on the sign-in card, and your own sign-in address."],
+    ["Your brand", "Your logo, colours, fonts, background and words on the sign-in card and in emails, your own sign-in address, and a sign-in button in your look for your app."],
     ["Twelve languages", "The sign-in card speaks your people's language, chosen from their browser."],
     ["Session control", "Idle sign-out, country rules, session watch, remembered devices and device-bound sessions."],
     ["Emergency accounts", "Require single sign-on and keep up to two emergency accounts, so you can still get in when your identity provider is down."],

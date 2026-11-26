@@ -5,6 +5,10 @@ All notable changes to aiveth-landing-page. Format: [Keep a Changelog](https://k
 ## [Unreleased]
 
 ### Added
+- 2026-11-26 — caught up with the product: the Next.js SDK everywhere the SDKs are named; signed
+  access tokens for your own API (developer bullet, a "Tokens for your API" guide, RFC 9068 and
+  RFC 8707 in the standards); "Your coding agent" (Aiveth's MCP server) and "Branding" guides; the
+  brand row now names fonts, background, emails and the sign-in button in your look.
 - Home: hero with a drawing of the sign-in card, "Works with" strip, who it is for, features,
   developers (OIDC settings), DPDP compliance, branding and sessions, FAQ, final call to action.
 - Pages: Pricing (Free + Talk to sales), Security, Integrations, Developers, About, Contact,

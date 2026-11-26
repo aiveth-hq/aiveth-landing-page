@@ -9,14 +9,17 @@ import { GridStyle } from "@/home/Sections";
 /** Where each guide lives in the docs (every page exists there). */
 const GUIDES: [string, string, string][] = [
   ["Quickstart", "Add “Login with Aiveth” to a web app with the authorization code flow and PKCE.", "/quickstart"],
-  ["Tokens and claims", "ID tokens, opaque access tokens, refresh, and the token template for your own claims.", "/apps/tokens-and-claims"],
+  ["Tokens and claims", "ID tokens, access tokens, refresh, and the token template for your own claims.", "/apps/tokens-and-claims"],
+  ["Tokens for your API", "A signed access token your own backend checks itself, with the person's organization, role and permissions.", "/apps/your-api"],
   ["Single sign-on", "Let each customer bring their own identity provider over OIDC or SAML.", "/sign-in/single-sign-on"],
   ["User sync (SCIM)", "Keep people and groups in step with your customers' directories.", "/access/scim"],
   ["Webhooks and events", "Signed events for every change, with retries, and the full list of event types.", "/events/webhooks"],
   ["AI agents and MCP", "Short-lived agent tokens, controls, human approval, and Aiveth's own MCP server.", "/agents/overview"],
+  ["Your coding agent", "Let Claude or Codex set up apps, APIs and branding through Aiveth's MCP server, with your yes for each change.", "/agents/mcp-server"],
+  ["Branding", "Your logo, colours, fonts and background on the sign-in pages and emails, and a sign-in button in your look.", "/brand/branding"],
   ["Consent API", "Record, check and withdraw DPDP consent from your own app's screens.", "/privacy/consent"],
   ["Admin API", "Manage people, roles and access from your servers with scoped API keys.", "/api-reference/introduction"],
-  ["SDKs", "Node, Python and React — what each one does and how to start.", "/sdks/overview"],
+  ["SDKs", "Node, Python, React and Next.js — what each one does and how to start.", "/sdks/overview"],
 ];
 
 /** The discovery document's main addresses (as the docs list them). */
@@ -31,7 +34,7 @@ const ENDPOINTS: [string, string][] = [
   ["GET", "/v1/auth/.well-known/jwks.json"],
 ];
 
-const STANDARDS = ["OpenID Connect", "OAuth 2.0 + PKCE", "SAML 2.0", "SCIM 2.0", "WebAuthn passkeys", "Device login (RFC 8628)", "DPoP (RFC 9449)", "Token exchange (RFC 8693)", "Shared Signals"];
+const STANDARDS = ["OpenID Connect", "OAuth 2.0 + PKCE", "SAML 2.0", "SCIM 2.0", "WebAuthn passkeys", "Device login (RFC 8628)", "DPoP (RFC 9449)", "Token exchange (RFC 8693)", "JWT access tokens (RFC 9068)", "Resource indicators (RFC 8707)", "Shared Signals"];
 
 export default function Developers() {
   return (
