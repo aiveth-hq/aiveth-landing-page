@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { mono, t } from "@/site/theme";
-import { Heading, wrap } from "@/site/ui";
+import { Heading, TRADEMARKS, wrap } from "@/site/ui";
 
 /** Official logos (see ASSETS.md), each unchanged on a white tile; the rest as names. */
 const LOGOS: [string, string, number][] = [
@@ -47,6 +47,7 @@ export function HomeFaq() {
             </details>
           ))}
         </div>
+        <p style={{ margin: "20px 0 0", fontSize: 13, color: t.text3, textAlign: "center" }}>{TRADEMARKS}</p>
       </div>
     </section>
   );

@@ -4,6 +4,9 @@ import { mono, t } from "./theme";
 
 export const wrap: CSSProperties = { maxWidth: 1240, margin: "0 auto", padding: "0 clamp(16px, 4vw, 40px)" };
 
+/** The one trademark line, wherever another company's product is named (Integrations, FAQ). */
+export const TRADEMARKS = "All product names and logos are trademarks of their owners. Their use names the integration only and does not imply endorsement.";
+
 export function Eyebrow({ children }: { children: ReactNode }) {
   return <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: ".12em", color: t.brand, textTransform: "uppercase" }}>{children}</div>;
 }

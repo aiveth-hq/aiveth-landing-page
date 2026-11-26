@@ -3,7 +3,7 @@ import { DOCS } from "@/lib/links";
 import { SEO_INTEGRATIONS } from "@/lib/seo";
 import SiteLayout from "@/site/SiteLayout";
 import { t } from "@/site/theme";
-import { Button, Heading, wrap } from "@/site/ui";
+import { Button, Heading, TRADEMARKS, wrap } from "@/site/ui";
 
 /**
  * What Aiveth works with, as the docs state it. A logo only where its owner's rules allow it on a
@@ -58,7 +58,7 @@ export default function Integrations() {
               </div>
             ))}
           </div>
-          <p style={{ marginTop: 40, fontSize: 13, color: t.text3 }}>All product names and logos are trademarks of their owners. Their use names the integration only and does not imply endorsement.</p>
+          <p style={{ marginTop: 40, fontSize: 13, color: t.text3 }}>{TRADEMARKS}</p>
           <div style={{ marginTop: 20 }}><Button href={`${DOCS}`} kind="quiet">All documentation</Button></div>
         </div>
       </section>
