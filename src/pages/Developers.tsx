@@ -11,6 +11,7 @@ const GUIDES: [string, string, string][] = [
   ["Quickstart", "Add “Login with Aiveth” to a web app with the authorization code flow and PKCE.", "/quickstart"],
   ["Tokens and claims", "ID tokens, access tokens, refresh, and the token template for your own claims.", "/apps/tokens-and-claims"],
   ["Tokens for your API", "A signed access token your own backend checks itself, with the person's organization, role and permissions.", "/apps/your-api"],
+  ["Workspaces", "Your own customers inside your app: one login, a role in each workspace, invitations, and the active workspace in every token.", "/access/workspaces"],
   ["Single sign-on", "Let each customer bring their own identity provider over OIDC or SAML.", "/sign-in/single-sign-on"],
   ["User sync (SCIM)", "Keep people and groups in step with your customers' directories.", "/access/scim"],
   ["Webhooks and events", "Signed events for every change, with retries, and the full list of event types.", "/events/webhooks"],

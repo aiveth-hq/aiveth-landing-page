@@ -71,7 +71,7 @@ const CODE: [string, string][] = [
 ];
 
 const USES: [string, string, string][] = [
-  ["For teams building a product", "Sign-in for your customers' users, with single sign-on and user sync for the enterprises that ask for it.", "B2B and consumer apps"],
+  ["For teams building a product", "Sign-in for your customers' users, a workspace for each of your customers with its own members and roles, and single sign-on and user sync for the enterprises that ask for it.", "B2B and consumer apps"],
   ["For your own people", "One sign-in for your staff's apps, roles from your directory, and the activity log your auditors want.", "Workforce sign-in"],
   ["For AI agents", "Let agents act for a person with short-lived tokens, limits you set, and a person's yes before anything that matters.", "Agents and MCP servers"],
 ];
