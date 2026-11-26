@@ -29,7 +29,7 @@ const FAQ: [string, string][] = [
   ["What is Aiveth?", "A sign-in and access-control service for organizations: your apps send people to Aiveth to sign in, and your admins manage people, roles and security in one console."],
   ["Where is our data kept?", "Production data is stored and processed in India. The few providers that handle a small part of it elsewhere are named on our sub-processors page."],
   ["Do we have to rebuild our app?", "No. Aiveth is a standard OpenID Connect provider, so the OIDC library you already use works. SDKs for Node, Python, React and Next.js make it quicker."],
-  ["Can we bring our people from another system?", "Yes. Import people with their passwords — bcrypt and Argon2id hashes work at once, and other hashes are checked once by your old system."],
+  ["Can we bring our people from another system?", "Yes. Import people with their passwords — bcrypt and Argon2id hashes work at once, and other hashes are checked once by your old system. Then bring your workspaces and who is in each, from Clerk, Auth0, WorkOS or your own database."],
   ["Is there a free plan?", "Yes, with sign-in, passkeys, two-step, attack protection, the activity log and consent. For more, talk to sales."],
   ["Does Aiveth help with the DPDP Act?", "Yes: consent, people's rights, children's consent, erasure and breach notices are built in. Your lawyers still decide what your organization needs."],
 ];
