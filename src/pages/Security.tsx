@@ -13,7 +13,7 @@ const BLOCKS: { title: string; points: string[] }[] = [
   { title: "Secrets and keys", points: ["Sensitive values — single sign-on secrets, webhook secrets, phone numbers, log-stream credentials — are encrypted before they are stored.", "API keys are shown once; Aiveth keeps only a SHA-256 fingerprint, and a key can be limited to the addresses it comes from."] },
   { title: "Sessions and cookies", points: ["Session length and idle sign-out are your choice.", "Cookies use the __Host- prefix, and every change made with a cookie must come from Aiveth's own origin.", "Passkeys are bound to Aiveth's own host name."] },
   { title: "Logs without secrets", points: ["Service logs record IDs, not personal data; anything that looks like a secret is masked.", "Every request has an ID you also see in your activity log, so support never needs your data."] },
-  { title: "Support access is yours to give", points: ["Gooclaim support sees your console only when you turn support access on, only for the time you choose, and only read-only.", "Your Owners are emailed each time it is turned on or off."] },
+  { title: "Support access is yours to give", points: ["Aiveth support sees your console only when you turn support access on, only for the time you choose, and only read-only.", "Your Owners are emailed each time it is turned on or off."] },
 ];
 
 const DPDP: [string, string][] = [

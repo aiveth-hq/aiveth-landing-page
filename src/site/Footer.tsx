@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CONSOLE, CONTACT_EMAIL, DOCS, GOOCLAIM, SIGN_UP, salesPage } from "@/lib/links";
+import { CONSOLE, CONTACT_EMAIL, DOCS, SIGN_UP, salesPage } from "@/lib/links";
 import Logo from "./Logo";
 import { mono, t } from "./theme";
 
@@ -28,7 +28,6 @@ export default function Footer() {
             <Logo size={24} /> Aiveth
           </div>
           <div style={{ marginTop: 10, fontSize: 14, color: t.text2 }}>Sign-in and access control for your organization.</div>
-          <div style={{ marginTop: 6, fontSize: 14, color: t.text2 }}>Built by <a href={GOOCLAIM} style={{ color: t.text, fontWeight: 500 }}>Gooclaim</a>.</div>
           <div style={{ marginTop: 16, fontFamily: mono, fontSize: 12, color: t.text3 }}>MADE IN INDIA</div>
         </div>
         {COLS.map((c) => (
@@ -39,7 +38,7 @@ export default function Footer() {
         ))}
       </div>
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "20px 24px 36px", borderTop: `1px solid ${t.border}`, display: "flex", justifyContent: "space-between", gap: 16, flexWrap: "wrap", fontSize: 13, color: t.text3 }}>
-        <span>© 2026 Gooclaim. All rights reserved.</span>
+        <span>© 2026 Aiveth Labs Private Limited. All rights reserved.</span>
         <span>Passkeys · Single sign-on · DPDP consent · Activity log kept one year</span>
       </div>
     </footer>

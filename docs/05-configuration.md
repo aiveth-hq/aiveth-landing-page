@@ -14,4 +14,4 @@ There are no environment variables and no secrets. Everything a page links to is
 | `SECURITY_EMAIL` | `security@aiveth.com` | Disclosure, security.txt |
 | `PRIVACY_EMAIL` | `privacy@aiveth.com` | Grievance officer, DPA requests |
 
-SEO: `src/lib/seo.ts` (`SITE.url = https://aiveth.com`, default share image `/og-image.png`).
+SEO: `src/lib/seo.ts` (`SITE.url = https://aiveth.com`, default share image `/og-aiveth.png`).

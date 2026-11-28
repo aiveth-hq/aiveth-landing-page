@@ -6,11 +6,11 @@ import LegalLayout from "@/site/LegalLayout";
 
 export function Dpa() {
   return (
-    <LegalLayout eyebrow="Legal · Data processing" title="Data processing agreement" updated="24 November 2026">
+    <LegalLayout eyebrow="Legal · Data processing" title="Data processing agreement" updated="28 November 2026">
       <SEOHead seo={SEO_DPA} path="/dpa" />
       <p>
-        This agreement is part of the <Link to="/terms">terms of service</Link>. It sets out how Gooclaim
-        Technologies Private Limited (&ldquo;Gooclaim&rdquo;) processes personal data for an organization that
+        This agreement is part of the <Link to="/terms">terms of service</Link>. It sets out how Aiveth
+        Labs Private Limited (&ldquo;Aiveth Labs&rdquo;) processes personal data for an organization that
         uses Aiveth (&ldquo;you&rdquo;), under the <strong>Digital Personal Data Protection Act, 2023</strong> and
         the <strong>Digital Personal Data Protection Rules, 2025</strong>.
       </p>
@@ -23,7 +23,7 @@ export function Dpa() {
       <h2>1. Roles</h2>
       <ul>
         <li>You are the <strong>Data Fiduciary</strong> for the personal data of the people who sign in to your apps and are managed in your Aiveth account.</li>
-        <li>Gooclaim is your <strong>Data Processor</strong>: it processes that data only to provide Aiveth, and only on your documented instructions — your settings in the console and API, these terms, and what you ask in writing.</li>
+        <li>Aiveth Labs is your <strong>Data Processor</strong>: it processes that data only to provide Aiveth, and only on your documented instructions — your settings in the console and API, these terms, and what you ask in writing.</li>
       </ul>
 
       <h2>2. What is processed</h2>
@@ -34,18 +34,18 @@ export function Dpa() {
         <li><strong>Duration:</strong> while your account is active, then as set out in section 8.</li>
       </ul>
 
-      <h2>3. Gooclaim's duties</h2>
+      <h2>3. Aiveth Labs' duties</h2>
       <ul>
         <li>Process the data only for the purpose above, and tell you if an instruction appears to break the law.</li>
-        <li>Make sure everyone at Gooclaim who can see the data is bound to keep it confidential.</li>
+        <li>Make sure everyone at Aiveth Labs who can see the data is bound to keep it confidential.</li>
         <li>Keep the security measures described on our <Link to="/security">security page</Link>, and keep improving them.</li>
         <li>Not sell the data, and not use it to train AI models.</li>
       </ul>
 
       <h2>4. Sub-processors</h2>
       <ul>
-        <li>You allow Gooclaim to use the sub-processors on the <Link to="/subprocessors">sub-processors page</Link>.</li>
-        <li>Each is bound in writing to protect the data at least as well as this agreement does. Gooclaim stays responsible for them.</li>
+        <li>You allow Aiveth Labs to use the sub-processors on the <Link to="/subprocessors">sub-processors page</Link>.</li>
+        <li>Each is bound in writing to protect the data at least as well as this agreement does. Aiveth Labs stays responsible for them.</li>
         <li>Before adding or replacing one, we update that page and email your Owners at least 30 days ahead. You may object; if we cannot address it, you may end the affected service.</li>
       </ul>
 
@@ -53,12 +53,12 @@ export function Dpa() {
       <p>
         Aiveth gives your people a rights page — download their data, ask for a correction, name a nominee,
         raise a complaint — and gives your admins the tools to act on each request. Where a request reaches
-        Gooclaim directly, we pass it to you and do not answer it ourselves, unless you ask us to.
+        Aiveth Labs directly, we pass it to you and do not answer it ourselves, unless you ask us to.
       </p>
 
       <h2>6. Personal data breaches</h2>
       <ul>
-        <li>Gooclaim tells you without undue delay after it becomes aware of a personal data breach that affects your data, with what it knows, and keeps you updated.</li>
+        <li>Aiveth Labs tells you without undue delay after it becomes aware of a personal data breach that affects your data, with what it knows, and keeps you updated.</li>
         <li>Aiveth's breach register and notices help you inform the Data Protection Board and the people affected, as Rule 7 requires.</li>
       </ul>
 
@@ -72,7 +72,7 @@ export function Dpa() {
 
       <h2>8. When your account ends</h2>
       <p>
-        You can export your data before you leave. After your account ends, Gooclaim deletes your data,
+        You can export your data before you leave. After your account ends, Aiveth Labs deletes your data,
         except what the law requires it to keep (for example, the activity log for the period the Rules set).
       </p>
 
@@ -105,10 +105,10 @@ const PROCESSORS: [string, string, string, string][] = [
 
 export function Subprocessors() {
   return (
-    <LegalLayout eyebrow="Legal · Sub-processors" title="Sub-processors" updated="24 November 2026">
+    <LegalLayout eyebrow="Legal · Sub-processors" title="Sub-processors" updated="28 November 2026">
       <SEOHead seo={SEO_SUBPROCESSORS} path="/subprocessors" />
       <p>
-        These service providers help Gooclaim run Aiveth and may process personal data for the
+        These service providers help Aiveth Labs run Aiveth and may process personal data for the
         organizations that use it, under the <Link to="/dpa">data processing agreement</Link>. Production
         data is stored and processed in India. We email Owners at least 30 days before adding or
         replacing one.
@@ -127,7 +127,7 @@ export function Subprocessors() {
       </div>
       <p>
         When people choose to sign in with Google, Microsoft or GitHub, or an organization connects its own
-        identity provider or its own AI provider, that provider is chosen by them, not by Gooclaim, and its
+        identity provider or its own AI provider, that provider is chosen by them, not by Aiveth Labs, and its
         own terms apply.
       </p>
     </LegalLayout>

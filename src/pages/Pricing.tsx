@@ -5,7 +5,7 @@ import SiteLayout from "@/site/SiteLayout";
 import { mono, t } from "@/site/theme";
 import { Button, Check, Heading, wrap } from "@/site/ui";
 
-/** The plans as the product holds them (gooclaim-aiveth `plans.py`): keep the two equal. */
+/** The plans as the product holds them (the product's `plans.py`): keep the two equal. */
 const PLANS = [
   { name: "Free", price: "Free", under: "Always free", users: "10,000", apps: "3", support: "By email, as soon as we can.",
     lead: "Sign-in, passkeys, two-step, attack protection, the activity log and consent", adds: [] as string[] },

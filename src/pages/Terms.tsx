@@ -6,17 +6,17 @@ import LegalLayout from "@/site/LegalLayout";
 
 export default function Terms() {
   return (
-    <LegalLayout eyebrow="Legal · Terms" title="Terms of service" updated="24 November 2026">
+    <LegalLayout eyebrow="Legal · Terms" title="Terms of service" updated="28 November 2026">
       <SEOHead seo={SEO_TERMS} path="/terms" />
       <p>
         These terms apply when an organization uses Aiveth. By creating an Aiveth account, or by using
         Aiveth on an organization's behalf, you agree to them for that organization. If you have signed
-        a separate agreement with Gooclaim, that agreement comes first where the two differ.
+        a separate agreement with Aiveth Labs, that agreement comes first where the two differ.
       </p>
 
       <h2>1. Who the terms are between</h2>
       <p>
-        &ldquo;Gooclaim&rdquo; means Gooclaim Technologies Private Limited, Bengaluru, India. &ldquo;You&rdquo;
+        &ldquo;Aiveth Labs&rdquo; means Aiveth Labs Private Limited, Bengaluru, India. &ldquo;You&rdquo;
         means the organization that holds the Aiveth account. &ldquo;Aiveth&rdquo; means the sign-in and
         access-control service, its console, APIs, SDKs and documentation.
       </p>
@@ -34,13 +34,13 @@ export default function Terms() {
         <li>break the law, or process personal data without a lawful basis;</li>
         <li>attack, probe or overload Aiveth or anyone else's systems, except security testing we agree to in writing;</li>
         <li>send spam or messages people have not asked for;</li>
-        <li>copy, resell or rebuild Aiveth, except as a partner under a written agreement with Gooclaim.</li>
+        <li>copy, resell or rebuild Aiveth, except as a partner under a written agreement with Aiveth Labs.</li>
       </ul>
 
       <h2>4. Your data</h2>
       <ul>
         <li>You own the data you and your people put into Aiveth.</li>
-        <li>For the personal data of the people who sign in to your apps, you are the Data Fiduciary and Gooclaim is your Data Processor: we process it only on your instructions, to provide Aiveth. Data processing terms are available on request.</li>
+        <li>For the personal data of the people who sign in to your apps, you are the Data Fiduciary and Aiveth Labs is your Data Processor: we process it only on your instructions, to provide Aiveth. Data processing terms are available on request.</li>
         <li>How we handle personal data is set out in our <Link to="/privacy">privacy policy</Link>.</li>
       </ul>
 
@@ -66,7 +66,7 @@ export default function Terms() {
 
       <h2>8. Our property</h2>
       <p>
-        Aiveth, its software and its name belong to Gooclaim. These terms give you the right to use
+        Aiveth, its software and its name belong to Aiveth Labs. These terms give you the right to use
         Aiveth while your account is active; they do not transfer ownership.
       </p>
 
@@ -79,7 +79,7 @@ export default function Terms() {
       <h2>10. Warranties and liability</h2>
       <ul>
         <li>Aiveth is provided &ldquo;as is&rdquo;, except for what your plan or agreement promises.</li>
-        <li>Neither side is liable for indirect or consequential loss. Gooclaim's total liability is limited to the fees you paid for Aiveth in the twelve months before the claim.</li>
+        <li>Neither side is liable for indirect or consequential loss. Aiveth Labs' total liability is limited to the fees you paid for Aiveth in the twelve months before the claim.</li>
         <li>Nothing here limits liability that the law does not allow to be limited.</li>
       </ul>
 

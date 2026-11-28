@@ -48,9 +48,9 @@ export default function Nav() {
     <header style={{ position: "sticky", top: 0, zIndex: 30, background: `color-mix(in srgb, ${t.bg} 85%, transparent)`, backdropFilter: "blur(14px)", WebkitBackdropFilter: "blur(14px)", borderBottom: `1px solid ${t.border}`, color: t.text }}>
       <style dangerouslySetInnerHTML={{ __html: LAYOUT_CSS }} />
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "12px 20px", display: "flex", alignItems: "center", gap: 28 }}>
-        <Link to="/" aria-label="Aiveth by Gooclaim, home" style={{ display: "flex", alignItems: "center", gap: 10, fontWeight: 600, fontSize: 18, letterSpacing: "-0.02em", flex: "none" }}>
+        <Link to="/" aria-label="Aiveth, home" style={{ display: "flex", alignItems: "center", gap: 10, fontWeight: 600, fontSize: 18, letterSpacing: "-0.02em", flex: "none" }}>
           <Logo size={26} />
-          <span>Aiveth<span style={{ color: t.text3, fontWeight: 500, fontSize: 13, marginLeft: 6 }}>by Gooclaim</span></span>
+          <span>Aiveth</span>
         </Link>
         <nav aria-label="Main" className="av-nav-wide" style={{ display: "flex", gap: 4, flex: 1 }}>
           {LINKS.map((l) => <NavLink key={l.label} l={l} active={active(l.to)} />)}

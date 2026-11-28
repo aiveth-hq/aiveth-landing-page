@@ -1,6 +1,6 @@
 # aiveth-landing-page
 
-> The public website for Aiveth by Gooclaim — **aiveth.com**.
+> The public website for Aiveth — **aiveth.com**.
 
 **Stack:** Vite 5 + React 18 + TypeScript, prerendered to static HTML, hosted on Vercel
 **Status:** Active — not yet deployed (Vercel hookup pending)
@@ -42,4 +42,3 @@ npm run preview      # serve dist/ locally
 |---|---|
 | [aiveth-hq/aiveth](https://github.com/aiveth-hq/aiveth) | The Aiveth service (backend + console) — `accounts.aiveth.com` |
 | [aiveth-hq/docs](https://github.com/aiveth-hq/docs) | Developer docs on Mintlify — `docs.aiveth.com` |
-| [gooclaim-claimos/gooclaim-hero-landing](https://github.com/gooclaim-claimos/gooclaim-hero-landing) | Gooclaim's website — the design system this site reuses |

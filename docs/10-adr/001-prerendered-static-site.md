@@ -1,17 +1,17 @@
-# ADR-001: A prerendered static site, Gooclaim's website stack
+# ADR-001: A prerendered static site
 
 **Date:** 2026-11
 **Status:** Accepted
 
 ## Context
-Aiveth needed a website fast, in Gooclaim's look, that search engines index well and that costs
+Aiveth needed a website fast, in a clean look, that search engines index well and that costs
 nothing to run.
 
 ## Decision
-Reuse Gooclaim's website stack (Vite + React, prerendered to HTML, Vercel) and its design system.
+Vite + React, prerendered to HTML, on Vercel, with one small design system (`src/site/theme.ts`).
 
 ## Reasons
-- Same look and tooling as gooclaim.com; nothing new to learn.
+- Familiar tooling; nothing new to learn.
 - Every route is real HTML: fast first paint, good for search and link previews.
 - No server, no database, nothing to secure but static files.
 

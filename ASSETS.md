@@ -1,6 +1,6 @@
 # Third-party logos
 
-Byte-for-byte copies of the files the Aiveth console uses (gooclaim-aiveth `console/ASSETS.md` records
+Byte-for-byte copies of the files the Aiveth console uses (the product's `console/ASSETS.md`, repo `aiveth-hq/aiveth`, records
 where each was downloaded, unchanged, from the brand owner's own site). They name a sign-in method on the
 home page's drawing of the sign-in card; no endorsement is implied.
 

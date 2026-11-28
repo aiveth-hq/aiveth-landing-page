@@ -2,12 +2,13 @@
 > Committed to git. Shared by all engineers. Keep under 120 lines.
 
 ## What this is
-The public website **aiveth.com** for *Aiveth by Gooclaim* (sign-in and access control for
-organizations). Built from Gooclaim's website stack and design system (`gooclaim-hero-landing`):
+The public website **aiveth.com** for *Aiveth* (sign-in and access control for organizations).
 Vite + React + TS, prerendered (`scripts/prerender.mjs`), Vercel. Not the product: the product lives
 at `accounts.aiveth.com` (repo `aiveth-hq/aiveth`), docs at `docs.aiveth.com` (repo `aiveth-hq/docs`).
 
 ## Rules
+- 🔴 **Aiveth is its own product** (founder 2026-11-28): never "by Gooclaim", never a Gooclaim link,
+  logo or name on any page. The legal entity is **Aiveth Labs Private Limited** (Terms, Privacy, DPA, footer).
 - 🔴 **Every claim must be true in the product.** Before adding a feature line, find it in the
   product code (`aiveth-hq/aiveth`) or the developer docs. No invented numbers, customers,
   certifications (no SOC 2 / ISO badges — we have none), or uptime figures.

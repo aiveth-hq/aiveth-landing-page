@@ -12,7 +12,6 @@ export const SALES_EMAIL = CONTACT_EMAIL;
 export const SECURITY_EMAIL = CONTACT_EMAIL;
 export const PRIVACY_EMAIL = CONTACT_EMAIL;
 export const SUPPORT_EMAIL = CONTACT_EMAIL;
-export const GOOCLAIM = "https://www.gooclaim.com";
 
 /** "Talk to sales" opens the form (`/contact-sales`), the plan carried along when there is one. */
 export function salesPage(plan?: string): string {

@@ -40,7 +40,6 @@ export default function SEOHead({ seo, path, jsonLd, alternates = [] }: Props) {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content={SITE.twitter} />
 
       {/* Crawl */}
       <meta name="robots" content="index, follow, max-image-preview:large" />

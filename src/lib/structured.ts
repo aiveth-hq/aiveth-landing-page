@@ -3,8 +3,8 @@ import { SITE } from "./seo";
 export const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Gooclaim",
-  url: "https://www.gooclaim.com",
+  name: "Aiveth Labs Private Limited",
+  url: SITE.url,
   brand: { "@type": "Brand", name: "Aiveth" },
 };
 
@@ -15,6 +15,6 @@ export const softwareJsonLd = {
   url: SITE.url,
   applicationCategory: "SecurityApplication",
   operatingSystem: "Web",
-  publisher: { "@type": "Organization", name: "Gooclaim" },
+  publisher: { "@type": "Organization", name: "Aiveth Labs Private Limited" },
   offers: { "@type": "Offer", price: "0", priceCurrency: "INR", description: "Free plan" },
 };

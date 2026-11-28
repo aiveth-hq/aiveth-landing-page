@@ -4,7 +4,7 @@
 index.html                 page shell: title, theme script, fonts, favicon
 vercel.json                security headers
 scripts/prerender.mjs      ROUTES → static HTML
-public/                    favicon, og-image, logos/, robots.txt, sitemap.xml, .well-known/security.txt
+public/                    favicon, og-aiveth.png, logos/, robots.txt, sitemap.xml, .well-known/security.txt
 src/
   main.tsx                 client entry (hydrate)
   entry-server.tsx         SSR render for prerender

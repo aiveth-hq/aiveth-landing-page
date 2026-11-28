@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
-import { GOOCLAIM, PRIVACY_EMAIL, SALES_EMAIL, SECURITY_EMAIL, SUPPORT_EMAIL, salesPage } from "@/lib/links";
+import { PRIVACY_EMAIL, SALES_EMAIL, SECURITY_EMAIL, SUPPORT_EMAIL, salesPage } from "@/lib/links";
 import { SEO_ABOUT, SEO_CONTACT } from "@/lib/seo";
 import SiteLayout from "@/site/SiteLayout";
 import { mono, t } from "@/site/theme";
@@ -22,13 +22,13 @@ export function About() {
       <section style={{ borderBottom: `1px solid ${t.border}` }}>
         <div style={{ ...wrap, paddingTop: "clamp(48px, 6vw, 88px)", paddingBottom: "clamp(48px, 6vw, 88px)" }}>
           <div className="av-split" style={{ alignItems: "start" }}>
-            <Heading eyebrow="About" title="Built by Gooclaim, for every organization." />
+            <Heading eyebrow="About" title="Built in India, for every organization." />
             <div style={{ fontSize: 17, color: t.text2, display: "grid", gap: 16 }}>
               <p style={{ margin: 0 }}>
-                <a href={GOOCLAIM} style={{ color: t.text, fontWeight: 500 }}>Gooclaim</a> builds software for insurance claims in India — a field where every sign-in, every consent and every record is checked by a regulator.
+                Aiveth was first built as the sign-in for software in a regulated field in India — where every sign-in, every consent and every record is checked by a regulator.
               </p>
               <p style={{ margin: 0 }}>
-                We built that sign-in for our own product. Then an organization outside claims asked to use it too. Aiveth is that service, made for any organization: the same engine, its own servers, keys and data, kept apart from Gooclaim's own.
+                Then organizations outside that field asked to use it too. Aiveth is that service, made for any organization, on its own servers, with its own keys and data.
               </p>
               <p style={{ margin: 0 }}>We are a team in Bengaluru, India.</p>
             </div>
@@ -101,7 +101,7 @@ export function Contact() {
               </div>
             ))}
           </div>
-          <p style={{ marginTop: 28, fontSize: 14, color: t.text3 }}>Gooclaim Technologies Private Limited · Bengaluru, India</p>
+          <p style={{ marginTop: 28, fontSize: 14, color: t.text3 }}>Aiveth Labs Private Limited · Bengaluru, India</p>
         </div>
       </section>
     </SiteLayout>

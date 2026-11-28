@@ -6,10 +6,10 @@ import LegalLayout from "@/site/LegalLayout";
 
 export default function Privacy() {
   return (
-    <LegalLayout eyebrow="Legal · Privacy" title="Privacy policy" updated="24 November 2026">
+    <LegalLayout eyebrow="Legal · Privacy" title="Privacy policy" updated="28 November 2026">
       <SEOHead seo={SEO_PRIVACY} path="/privacy" />
       <p>
-        Aiveth is a sign-in and access-control service built by Gooclaim. This policy explains what
+        Aiveth is a sign-in and access-control service. This policy explains what
         personal data Aiveth handles, why, who sees it, how long it is kept, and how to use your rights
         under the <strong>Digital Personal Data Protection Act, 2023</strong> and the{" "}
         <strong>Digital Personal Data Protection Rules, 2025</strong>.
@@ -24,7 +24,7 @@ export default function Privacy() {
 
       <h2>1. Who we are</h2>
       <p>
-        Gooclaim Technologies Private Limited (&ldquo;Gooclaim&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) is a
+        Aiveth Labs Private Limited (&ldquo;Aiveth Labs&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) is a
         company incorporated in India with its registered office in Bengaluru. We build and operate
         Aiveth and this website, aiveth.com.
       </p>
@@ -68,7 +68,7 @@ export default function Privacy() {
       <ul>
         <li>The organization whose app you sign in to.</li>
         <li>Service providers that help us run Aiveth, bound by contract to use the data only for that: cloud hosting, email delivery, phone message delivery in India, and a bot check. When an organization turns on a feature such as a parent check through DigiLocker or phone sign-in through Truecaller, those providers take part only in that step.</li>
-        <li>Gooclaim support, only when an organization turns support access on, for the time it chooses, read-only.</li>
+        <li>Aiveth support, only when an organization turns support access on, for the time it chooses, read-only.</li>
         <li>Regulators, courts and authorities, where the law requires it.</li>
       </ul>
 

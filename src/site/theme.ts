@@ -1,6 +1,6 @@
 import { makeTheme } from "@/theme/theme";
 
-/** The site's colours (Gooclaim's design system, Aiveth's blue as the brand). */
+/** The site's colours (Aiveth's design system, Aiveth's blue as the brand). */
 const theme = makeTheme("av", {
   bg: ["#FAFAF9", "#07090F"],
   surface: ["#FFFFFF", "#0F131C"],
